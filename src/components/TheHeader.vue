@@ -2,7 +2,7 @@
   <div class="title">
     <h1>{{ title }}</h1>
     <button class="container" type="button" @click="refreshResults">
-      換一批
+      Refresh
     </button>
   </div>
 </template>
@@ -27,15 +27,32 @@ export default {
     padding: 2rem;
     margin: 0;
   }
+  
   button {
-    border: none;
-    background-color: rgb(4, 78, 139);
-    outline: none;
+   font-family: 'Noto Sans TC', sans-serif ;
+    box-shadow: 0px 0px 0px 2px #d4f1ff;
+    background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+    background-color: #2dabf9;
     border-radius: 10px;
-    padding: 1rem;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    // font-family: Arial;
+    font-size: 19px;
+    padding: 12px 37px;
     margin: 1rem 0 0 0;
-    color: white;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #263666;
+  }
+  button:hover {
+     background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    background-color: #0688fa;
+    box-shadow:  0 0.25rem 0.75rem rgba(94, 93, 93, 0.438);
+  }
+  button:active {
+    position: relative;
+    top: 1px;
   }
 }
 </style>

@@ -6,16 +6,13 @@
       </div>
       <div class="card_content">
         <h3 :class="item.gender === 'male' ? 'male' : 'female'">
-          {{ item.name.title }}{{ item.name.first }}{{ item.name.last }}(
-          <span v-if="item.gender === 'male'">👨</span>
-          <span v-else>👩</span>
-          )
+          {{ item.name.title }}{{ item.name.first }}{{ item.name.last }}
         </h3>
         <p>
           Email：<a href="mailto:{{item.email}}">{{ item.email }}</a>
         </p>
         <p>
-          Phone: <a href="tel:{{item.phone}}">{{ item.phone }}</a>
+          Phone：<a href="tel:{{item.phone}}">{{ item.phone }}</a>
         </p>
         <p>
           Address：<a
@@ -63,20 +60,22 @@ export default {
 
   .cardpool {
     .card:hover {
-      background-color: rgb(253, 237, 216);
+      background-color: rgb(221, 244, 255);
+      box-shadow:  0 0.25rem 0.75rem rgba(94, 93, 93, 0.438);
+      border: 2px solid rgb(134, 134, 134);
     }
     .card {
       padding: 20px;
       margin: 1rem auto;
-      width: 70%;
+      width: 55%;
       display: grid;
-      border: 2px solid rgb(168, 168, 168);
+      border: 2px solid rgb(187, 186, 186);
       border-radius: 20px;
       .img {
         width:50%;
         margin: auto;
         img {
-          border-radius: 20px;
+          border-radius:50%;
           height: auto;
           width: 100%;
         }
@@ -93,7 +92,7 @@ export default {
           color: rgb(95, 95, 187);
         }
         .female {
-          color: rgb(247, 164, 178);
+          color: rgb(253, 113, 136);
         }
         h3 {
           text-align: center;
@@ -103,6 +102,8 @@ export default {
         // width: 20%;
         iframe {
           width: 100%;
+          border: 1px solid rgb(187, 186, 186);
+          border-radius: 20px;
         }
       }
     }
