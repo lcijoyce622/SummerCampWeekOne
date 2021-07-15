@@ -73,7 +73,7 @@ export default {
       border: 2px solid rgb(168, 168, 168);
       border-radius: 20px;
       .img {
-        width: 80%;
+        width:50%;
         margin: auto;
         img {
           border-radius: 20px;

@@ -1,5 +1,7 @@
 # week1
 
+Demo:https://lcijoyce622.github.io/SummerCampWeekOne/
+
 ## Project setup
 ```
 npm install
