@@ -60,9 +60,9 @@ export default {
 
   .cardpool {
     .card:hover {
-      background-color: rgb(221, 244, 255);
+      background-color: white;
       box-shadow:  0 0.25rem 0.75rem rgba(94, 93, 93, 0.438);
-      border: 2px solid rgb(134, 134, 134);
+      border: 0px solid rgb(134, 134, 134);
     }
     .card {
       padding: 20px;
