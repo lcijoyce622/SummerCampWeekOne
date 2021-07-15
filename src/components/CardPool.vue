@@ -5,9 +5,9 @@
         <img :src="item.picture.large" alt="item.name.title" />
       </div>
       <div class="card_content">
-        <h3 :class="item.gender === 'male' ? 'male' : 'female'">
+        <h2 :class="item.gender === 'male' ? 'male' : 'female'">
           {{ item.name.title }}{{ item.name.first }}{{ item.name.last }}
-        </h3>
+        </h2>
         <p>
           Email：<a href="mailto:{{item.email}}">{{ item.email }}</a>
         </p>
@@ -94,7 +94,7 @@ export default {
         .female {
           color: rgb(253, 113, 136);
         }
-        h3 {
+        h2 {
           text-align: center;
         }
       }
@@ -116,7 +116,7 @@ export default {
         .card_content {
           margin: 0;
           padding: 0;
-          h3 {
+          h2 {
             text-align: start;
           }
         }
